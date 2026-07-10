@@ -386,8 +386,7 @@ img {
 }
 
 .meta-list li .year {
-    flex: 0 0 auto;
-    min-width: 5em;
+    flex: 0 0 7em;
     white-space: nowrap;
 }
 
