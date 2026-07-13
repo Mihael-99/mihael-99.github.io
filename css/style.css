@@ -353,7 +353,7 @@ img {
 .about-meta {
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    gap: 48px;
 }
 
 .meta-item {
