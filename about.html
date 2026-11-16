@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Mingyu Shin</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css">
+    <script>try{document.documentElement.lang=localStorage.getItem('portfolio-lang')||'ko'}catch(e){}</script>
 </head>
 <body>
     <header class="header">
         <div class="header-inner">
             <a href="index.html" class="logo">MINGYU SHIN</a>
             <nav class="nav">
+                <button type="button" class="lang-toggle" aria-label="Language toggle">KR</button>
                 <a href="about.html" class="nav-link active">About</a>
                 <a href="project.html" class="nav-link">Project</a>
                 <a href="contact.html" class="nav-link">Contact</a>
@@ -29,10 +31,13 @@
 
             <div class="about-grid">
                 <div class="about-content">
-                    <h3 class="about-name">신민규 · Mingyu Shin</h3>
-                    <p class="about-role">Robotics · Kinetic Art · Drawing · 3D Design</p>
+                    <h3 class="about-name">
+                        <span data-lang="ko">신민규</span>
+                        <span data-lang="en">Mingyu Shin</span>
+                    </h3>
+                    <p class="about-role"><span data-lang="ko">로보틱스 · 키네틱 아트 · 드로잉 · 3D 디자인</span><span data-lang="en">Robotics · Kinetic Art · Drawing · 3D Design</span></p>
 
-                    <div class="about-bio">
+                    <div class="about-bio" data-lang="ko">
                         <p>
                             신민규는 키네틱, 로보틱스, 모델링, 드로잉을 기반으로 활동하는
                             미디어 아티스트다. 그의 작업은 불확실한 현상의 흐름 속에서 특정한
@@ -52,45 +57,158 @@
                         </p>
                     </div>
 
+                    <div class="about-bio" data-lang="en">
+                        <p>
+                            Mingyu Shin is a media artist working across kinetic art, robotics,
+                            3D modeling, and drawing. His practice begins with observing and
+                            predicting specific movements within the flow of uncertain
+                            phenomena, then attempts to fully control that order by containing
+                            it inside precisely engineered physical structures.
+                        </p>
+                        <p>
+                            Movements extracted from everyday scenes are interpreted for their
+                            intent and charged with physical tension and kinetic energy.
+                            Layered with forces and resistances, they are reconstructed into
+                            tangible works that exist in real space. Through this process, he
+                            answers a longing for the material and sensory presence that is
+                            fading in an increasingly immaterial era.
+                        </p>
+                        <p>
+                            Recent participations include &lt;얼기설기 무늬의 규약, The Interlace Pattern Protocol&gt;
+                            and &lt;2025 ZER01NE DAY&gt;.
+                        </p>
+                    </div>
+
                     <div class="about-meta">
                         <div class="meta-item">
-                            <h4 class="meta-title">Education</h4>
+                            <h4 class="meta-title"><span data-lang="ko">학력</span><span data-lang="en">Education</span></h4>
                             <ul class="meta-list">
-                                <li><span class="year">2025. 09</span><span class="entry">서울과학기술대학교 일반대학원 산업디자인학 전공 석사</span></li>
-                                <li><span class="year">2021. 02</span><span class="entry">연세대학교 디자인예술학부 디지털아트학 전공 학사</span></li>
-                                <li><span class="year">2021. 02</span><span class="entry">연세대학교 디자인예술학부 시각디자인학 부전공 학사</span></li>
+                                <li>
+                                    <span class="year">2025. 09</span>
+                                    <span class="entry">
+                                        <span data-lang="ko">서울과학기술대학교 일반대학원 산업디자인학 전공 석사</span>
+                                        <span data-lang="en">M.F.A. in Industrial Design, Graduate School, Seoul National University of Science &amp; Technology</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2021. 02</span>
+                                    <span class="entry">
+                                        <span data-lang="ko">연세대학교 디자인예술학부 디지털아트학 전공 학사</span>
+                                        <span data-lang="en">B.A. in Digital Art, School of Design &amp; Art, Yonsei University</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2021. 02</span>
+                                    <span class="entry">
+                                        <span data-lang="ko">연세대학교 디자인예술학부 시각디자인학 부전공 학사</span>
+                                        <span data-lang="en">Minor in Visual Communication Design, School of Design &amp; Art, Yonsei University</span>
+                                    </span>
+                                </li>
                             </ul>
                         </div>
 
                         <div class="meta-item">
-                            <h4 class="meta-title">Experience</h4>
+                            <h4 class="meta-title"><span data-lang="ko">경력</span><span data-lang="en">Experience</span></h4>
                             <ul class="meta-list">
-                                <li><span class="year">2025. 07 ~</span><span class="entry">유한책임회사 매드제너레이터, 책임</span></li>
-                                <li><span class="year">2021 – 2023</span><span class="entry">미디어아트스튜디오 아토드(ATOD), 작가 및 테크니션</span></li>
-                                <li><span class="year">2020 – 2021</span><span class="entry">주식회사 테크캡슐, 연구원</span></li>
+                                <li>
+                                    <span class="year">2025. 07 ~</span>
+                                    <span class="entry">
+                                        <span data-lang="ko">유한책임회사 매드제너레이터, 책임</span>
+                                        <span data-lang="en">Mad Generator LLC, Director</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2021 – 2023</span>
+                                    <span class="entry">
+                                        <span data-lang="ko">미디어아트스튜디오 아토드(ATOD), 작가 및 테크니션</span>
+                                        <span data-lang="en">ATOD Media Art Studio, Artist &amp; Technician</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2020 – 2021</span>
+                                    <span class="entry">
+                                        <span data-lang="ko">주식회사 테크캡슐, 연구원</span>
+                                        <span data-lang="en">Techcapsule Inc., Researcher</span>
+                                    </span>
+                                </li>
                             </ul>
                         </div>
 
                         <div class="meta-item">
-                            <h4 class="meta-title">Exhibitions</h4>
+                            <h4 class="meta-title"><span data-lang="ko">전시</span><span data-lang="en">Exhibitions</span></h4>
                             <ul class="meta-list">
-                                <li><span class="year">2025</span><span class="entry">&lt;얼기설기 무늬의 규약, The Interlace Pattern Protocol&gt;, 대구예술발전소 3F 미디어공간, 대구, 한국</span></li>
-                                <li><span class="year">2025</span><span class="entry">&lt;2025 ZER01NE DAY&gt;, 현대성수복합거점, 서울, 한국</span></li>
-                                <li><span class="year">2024</span><span class="entry">&lt;노원문화재단 신진작가전 언베일&gt;, 제주특별자치도문예회관 제3전시실, 제주, 한국</span></li>
-                                <li><span class="year">2024</span><span class="entry">&lt;노원문화재단 신진작가전 언베일&gt;, 노원문예회관 노원아트갤러리, 서울, 한국</span></li>
-                                <li><span class="year">2024</span><span class="entry">&lt;Art of System(체계의 기술)展&gt;, 스페이스CAN &amp; 오래된 집, 서울, 한국</span></li>
-                                <li><span class="year">2023</span><span class="entry">&lt;랩들이, LAB Coming Day&gt;, 아트코리아랩 수퍼테스트베드, 아트코리아랩 트윈트리타워, 서울, 한국</span></li>
-                                <li><span class="year">2023</span><span class="entry">&lt;As Your Wish&gt;, DDP 오픈 큐레이팅 vol.27, 동대문디자인플라자(DDP) 둘레길 갤러리, 서울, 한국</span></li>
-                                <li><span class="year">2022</span><span class="entry">&lt;Drawing Kinetic : FACE&gt;, 한국콘텐츠진흥원 교육사업 &lsquo;콘텐츠 임팩트&rsquo;, 공간 다용도, 서울, 한국</span></li>
-                                <li><span class="year">2021</span><span class="entry">&lt;스페이스랩 아직&gt;, 청년예술청 공동운영단 기획사업, 청년예술청, 서울, 한국</span></li>
+                                <li>
+                                    <span class="year">2025</span>
+                                    <span class="entry">
+                                        &lt;얼기설기 무늬의 규약, The Interlace Pattern Protocol&gt;, <span data-lang="ko">대구예술발전소 3F 미디어공간, 대구, 한국</span><span data-lang="en">Daegu Art Factory 3F Media Space, Daegu, Korea</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2025</span>
+                                    <span class="entry">
+                                        &lt;2025 ZER01NE DAY&gt;, <span data-lang="ko">현대성수복합거점, 서울, 한국</span><span data-lang="en">Hyundai Seongsu Hub, Seoul, Korea</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2024</span>
+                                    <span class="entry">
+                                        &lt;노원문화재단 신진작가전 언베일&gt;, <span data-lang="ko">제주특별자치도문예회관 제3전시실, 제주, 한국</span><span data-lang="en">Jeju Culture &amp; Art Center Gallery 3, Jeju, Korea</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2024</span>
+                                    <span class="entry">
+                                        &lt;노원문화재단 신진작가전 언베일&gt;, <span data-lang="ko">노원문예회관 노원아트갤러리, 서울, 한국</span><span data-lang="en">Nowon Art Gallery, Seoul, Korea</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2024</span>
+                                    <span class="entry">
+                                        &lt;Art of System(체계의 기술)展&gt;, <span data-lang="ko">스페이스CAN &amp; 오래된 집, 서울, 한국</span><span data-lang="en">Space CAN &amp; Oraedoen Jip, Seoul, Korea</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2023</span>
+                                    <span class="entry">
+                                        &lt;랩들이, LAB Coming Day&gt;, <span data-lang="ko">아트코리아랩 수퍼테스트베드, 아트코리아랩 트윈트리타워, 서울, 한국</span><span data-lang="en">Art Korea Lab Super Testbed, Twin Tree Tower, Seoul, Korea</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2023</span>
+                                    <span class="entry">
+                                        &lt;As Your Wish&gt;, <span data-lang="ko">DDP 오픈 큐레이팅 vol.27, 동대문디자인플라자(DDP) 둘레길 갤러리, 서울, 한국</span><span data-lang="en">DDP Open Curating vol.27, Dongdaemun Design Plaza Pathway Gallery, Seoul, Korea</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2022</span>
+                                    <span class="entry">
+                                        &lt;Drawing Kinetic : FACE&gt;, <span data-lang="ko">한국콘텐츠진흥원 교육사업 &lsquo;콘텐츠 임팩트&rsquo;, 공간 다용도, 서울, 한국</span><span data-lang="en">KOCCA Content Impact Program, Space Dayongdo, Seoul, Korea</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2021</span>
+                                    <span class="entry">
+                                        &lt;스페이스랩 아직&gt;, <span data-lang="ko">청년예술청 공동운영단 기획사업, 청년예술청, 서울, 한국</span><span data-lang="en">Seoul Youth Arts Center Collective Program, Seoul Youth Arts Center, Seoul, Korea</span>
+                                    </span>
+                                </li>
                             </ul>
                         </div>
 
                         <div class="meta-item">
-                            <h4 class="meta-title">Teaching</h4>
+                            <h4 class="meta-title"><span data-lang="ko">강의</span><span data-lang="en">Teaching</span></h4>
                             <ul class="meta-list">
-                                <li><span class="year">2024</span><span class="entry">&lt;Teens Media LAB, 쉬지 않는 손, 기계&gt; 서울시립서서울미술관 청소년 진로체험 프로그램, 주강사</span></li>
-                                <li><span class="year">2022</span><span class="entry">&lt;Creative 39&rsquo;s Kinetic-Art Class&gt; 부천아트벙커 키네틱아트 워크숍, 주강사</span></li>
+                                <li>
+                                    <span class="year">2024</span>
+                                    <span class="entry">
+                                        &lt;Teens Media LAB, 쉬지 않는 손, 기계&gt; <span data-lang="ko">서울시립서서울미술관 청소년 진로체험 프로그램, 주강사</span><span data-lang="en">Seoul Museum of Art West Seoul Youth Career Program, Lead Instructor</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="year">2022</span>
+                                    <span class="entry">
+                                        &lt;Creative 39&rsquo;s Kinetic-Art Class&gt; <span data-lang="ko">부천아트벙커 키네틱아트 워크숍, 주강사</span><span data-lang="en">Bucheon Art Bunker Kinetic Art Workshop, Lead Instructor</span>
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -105,6 +223,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=5"></script>
 </body>
 </html>

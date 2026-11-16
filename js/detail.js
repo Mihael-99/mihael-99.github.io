@@ -146,8 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const fallback = document.createElement('div');
         fallback.className = 'video-fallback';
         fallback.innerHTML = `
-            <p>이 영상은 외부 사이트 임베드가 차단되어 있어요.</p>
-            <a href="https://youtu.be/${videoId}" target="_blank" rel="noopener">유튜브에서 보기 ↗</a>
+            <p><span data-lang="ko">이 영상은 외부 사이트 임베드가 차단되어 있어요.</span><span data-lang="en">Embedding is disabled for this video.</span></p>
+            <a href="https://youtu.be/${videoId}" target="_blank" rel="noopener"><span data-lang="ko">유튜브에서 보기 ↗</span><span data-lang="en">Watch on YouTube ↗</span></a>
         `;
         iframe.replaceWith(fallback);
     }

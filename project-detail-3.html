@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>출근길 - Doze Off | Mingyu Shin</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css">
+    <script>try{document.documentElement.lang=localStorage.getItem('portfolio-lang')||'ko'}catch(e){}</script>
 </head>
 <body>
     <header class="header">
         <div class="header-inner">
             <a href="index.html" class="logo">MINGYU SHIN</a>
             <nav class="nav">
+                <button type="button" class="lang-toggle" aria-label="Language toggle">KR</button>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="project.html" class="nav-link active">Project</a>
                 <a href="contact.html" class="nav-link">Contact</a>
@@ -75,29 +77,29 @@
             <div class="detail-inner">
                 <header class="detail-header">
                     <h1 class="detail-title">출근길 - Doze Off</h1>
-                    <p class="detail-subtitle">Kinetic Art · 2024</p>
+                    <p class="detail-subtitle"><span data-lang="ko">키네틱 아트 · 2024</span><span data-lang="en">Kinetic Art · 2024</span></p>
                 </header>
 
                 <div class="detail-meta">
                     <div class="meta-row">
-                        <span class="meta-key">Year</span>
+                        <span class="meta-key"><span data-lang="ko">연도</span><span data-lang="en">Year</span></span>
                         <span class="meta-val">2024</span>
                     </div>
                     <div class="meta-row">
-                        <span class="meta-key">Venue</span>
-                        <span class="meta-val">&lt;Art of System (체계의 기술)展&gt;, 스페이스 CAN &amp; 오래된 집, 서울, 한국</span>
+                        <span class="meta-key"><span data-lang="ko">장소</span><span data-lang="en">Venue</span></span>
+                        <span class="meta-val">&lt;Art of System (체계의 기술)展&gt;, <span data-lang="ko">스페이스 CAN &amp; 오래된 집, 서울, 한국</span><span data-lang="en">Space CAN &amp; Oraedoen Jip, Seoul, Korea</span></span>
                     </div>
                     <div class="meta-row">
-                        <span class="meta-key">Medium</span>
-                        <span class="meta-val">Aluminum, DC Motor, PLA</span>
+                        <span class="meta-key"><span data-lang="ko">재료</span><span data-lang="en">Medium</span></span>
+                        <span class="meta-val"><span data-lang="ko">알루미늄, DC 모터, PLA</span><span data-lang="en">Aluminum, DC Motor, PLA</span></span>
                     </div>
                     <div class="meta-row">
-                        <span class="meta-key">Dimensions</span>
-                        <span class="meta-val">45(w) × 15(d) × 55(h) cm · Variable Dimension</span>
+                        <span class="meta-key"><span data-lang="ko">크기</span><span data-lang="en">Dimensions</span></span>
+                        <span class="meta-val">45(w) × 15(d) × 55(h) cm · <span data-lang="ko">가변 크기</span><span data-lang="en">Variable Dimension</span></span>
                     </div>
                 </div>
 
-                <div class="detail-description">
+                <div class="detail-description" data-lang="ko">
                     <p>
                         &lt;출근길 - Doze Off&gt;는 생명체가 지니고 있는 본질적인 속성인 움직임을
                         기계 장치에게 부여한 작업으로, 일상 속 현대인이 꾸벅꾸벅 졸고 있는 모습
@@ -119,6 +121,17 @@
                     </p>
                 </div>
 
+                <div class="detail-description" data-lang="en">
+                    <p>
+                        &lt;출근길 - Doze Off&gt; grants movement — the essential property of a living being — to a machine, observing and reinterpreting the motion contained in the everyday scene of a modern commuter nodding off. Unable to fall into deep sleep, the figure dozes, drops its head, jolts awake for an instant, then slowly slides back into sleep. This repeating scene is a physical rhythm produced by the unconscious patterns of the human body.
+                    </p>
+                    <p>
+                        Based on the observation and interpretation of this movement, the work is developed through sketches and reconstructed as mechanical motion. Seven modules move at different speeds and ranges, revealing distinct breaths and rhythms within a controlled order, as if each were an individual living creature.
+                    </p>
+                    <p>
+                        Through a machine reenacting unconscious human movement, &lt;출근길 - Doze Off&gt; reminds us that movement proves existence, and attempts to restore the reality of physical experience and the senses.
+                    </p>
+                </div>
                 <section class="detail-video-section">
                     <div class="video-embed" data-video-id="yF1fcMBMg9g">
                         <button type="button" class="video-thumb" aria-label="영상 재생">
@@ -130,13 +143,13 @@
                                 </svg>
                             </span>
                         </button>
-                        <p class="video-caption">Video</p>
+                        <p class="video-caption"><span data-lang="ko">영상</span><span data-lang="en">Video</span></p>
                     </div>
                 </section>
 
                 <nav class="detail-nav">
-                    <a href="project-detail-2.html" class="detail-nav-link back">← Previous Project</a>
-                    <a href="project-detail-4.html" class="detail-nav-link next">Next Project →</a>
+                    <a href="project-detail-2.html" class="detail-nav-link back"><span data-lang="ko">← 이전 프로젝트</span><span data-lang="en">← Previous Project</span></a>
+                    <a href="project-detail-4.html" class="detail-nav-link next"><span data-lang="ko">다음 프로젝트 →</span><span data-lang="en">Next Project →</span></a>
                 </nav>
             </div>
         </section>
@@ -148,7 +161,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/detail.js"></script>
+    <script src="js/main.js?v=5"></script>
+    <script src="js/detail.js?v=5"></script>
 </body>
 </html>

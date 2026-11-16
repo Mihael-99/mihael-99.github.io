@@ -1,3 +1,33 @@
+// 언어 토글 (KR / EN) — 사이트 전체, localStorage에 저장
+(function initLangToggle() {
+    const STORAGE_KEY = 'portfolio-lang';
+    const htmlEl = document.documentElement;
+
+    function getSaved() {
+        try { return localStorage.getItem(STORAGE_KEY) === 'en' ? 'en' : 'ko'; }
+        catch (e) { return 'ko'; }
+    }
+
+    function apply(lang) {
+        htmlEl.lang = lang;
+        const toggle = document.querySelector('.lang-toggle');
+        if (toggle) toggle.textContent = lang === 'en' ? 'EN' : 'KR';
+    }
+
+    apply(getSaved());
+
+    document.addEventListener('DOMContentLoaded', () => {
+        apply(getSaved());
+        const toggle = document.querySelector('.lang-toggle');
+        if (!toggle) return;
+        toggle.addEventListener('click', () => {
+            const next = htmlEl.lang === 'en' ? 'ko' : 'en';
+            apply(next);
+            try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
+        });
+    });
+})();
+
 // 부드러운 스크롤 진입 애니메이션
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.page-section, .home-hero, .home-intro');

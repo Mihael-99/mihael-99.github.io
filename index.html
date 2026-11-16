@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mingyu Shin — Media Art Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=5">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css">
+    <script>try{document.documentElement.lang=localStorage.getItem('portfolio-lang')||'ko'}catch(e){}</script>
 </head>
 <body>
     <header class="header">
         <div class="header-inner">
             <a href="index.html" class="logo">MINGYU SHIN</a>
             <nav class="nav">
+                <button type="button" class="lang-toggle" aria-label="Language toggle">KR</button>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="project.html" class="nav-link">Project</a>
                 <a href="contact.html" class="nav-link">Contact</a>
@@ -46,9 +48,9 @@
         </section>
 
         <section class="home-intro">
-            <h1 class="home-name">Mingyu Shin</h1>
-            <p class="home-role">Media Art Project &amp; Work</p>
-            <p class="home-keywords">Robotics, Kinetic Art, Drawing, 3D Design.</p>
+            <h1 class="home-name"><span data-lang="ko">신민규</span><span data-lang="en">Mingyu Shin</span></h1>
+            <p class="home-role"><span data-lang="ko">미디어 아트 프로젝트 &amp; 작업</span><span data-lang="en">Media Art Project &amp; Work</span></p>
+            <p class="home-keywords"><span data-lang="ko">로보틱스, 키네틱 아트, 드로잉, 3D 디자인.</span><span data-lang="en">Robotics, Kinetic Art, Drawing, 3D Design.</span></p>
             <div class="home-cta-group">
                 <a href="about.html" class="home-cta">About →</a>
                 <a href="project.html" class="home-cta">Projects →</a>
@@ -63,6 +65,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=5"></script>
 </body>
 </html>

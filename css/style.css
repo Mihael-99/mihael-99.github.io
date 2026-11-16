@@ -155,6 +155,31 @@ img {
 }
 
 /* ============================================
+   Language Toggle (KR / EN)
+   ============================================ */
+.lang-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: calc(var(--fs-nav) * 0.85);
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: inherit;
+    transition: opacity 0.2s ease;
+}
+
+.lang-toggle:hover {
+    opacity: 0.6;
+}
+
+/* 언어별 요소 표시 제어 */
+html[lang="ko"] [data-lang="en"] { display: none !important; }
+html[lang="en"] [data-lang="ko"] { display: none !important; }
+
+/* ============================================
    Main Layout
    ============================================ */
 .main {
